@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empfi | Projekte</title>
+    <link id="favicon" rel="icon" type="image/png" href="">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: url('../banner-image.png') no-repeat center center/cover;
+            border-radius: 0 0 3rem 3rem;
+            color: #3b3b3b;
+            position: relative;
+            animation: fadeIn 1.2s ease-in-out forwards;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #0077ff;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .hero img {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 200px;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .project-card {
+            background-color: #161b22;
+            border: 1px solid #58a6ff;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            opacity: 0;
+            animation: fadeIn 1.2s ease-in-out forwards;
+        }
+
+        .project-card:nth-child(1) {
+            animation-delay: 0.3s;
+        }
+
+        .project-card:nth-child(2) {
+            animation-delay: 0.6s;
+        }
+
+        .project-card:nth-child(3) {
+            animation-delay: 0.9s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-card h3 {
+            color: #58a6ff;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-card p {
+            color: #c9d1d9;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .project-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .project-links img {
+            width: 32px;
+            height: 32px;
+            transition: transform 0.3s;
+        }
+
+        .project-links img:hover {
+            transform: scale(1.2);
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .navigation button {
+            background-color: #58a6ff;
+            color: #0d1117;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            animation: fadeIn 1.2s ease-in-out forwards;
+        }
+
+        .navigation button:hover {
+            background-color: #0077ff;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>Willkommen in meinem Portfolio</h1>
+        <p>Entdecke meine Erfahrungen und Projekte in der Minecraft-Welt und darüber hinaus!</p>
+        <img id="playerSkin" alt="Minecraft Spieler Skin">
+    </header>
+
+    <section class="projects">
+        <div class="project-card">
+            <h3>DevCloud</h3>
+            <p>Kostenloses Discord Hosting und vieles mehr!</p>
+            <div class="project-links">
+                <a href="https://discord.com/invite/ycnSXPESjR" target="_blank">
+                    <img src="discord.png" alt="Discord-Link">
+                </a>
+                <a href="https://empfi.github.io/DevCloud/" target="_blank">
+                    <img src="web.png" alt="Webseite">
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>LöwenLegenden</h3>
+            <p>Kleiner aber feiner Aternos - Minecraft Server (Inaktiv)</p>
+            <div class="project-links">
+                <a href="https://discord.gg/mQGBfu2rDr" target="_blank">
+                    <img src="discord.png" alt="Link 1">
+                </a>
+                <a href="empfi.github.io/LoewenLegenden" target="_blank">
+                    <img src="web.png" alt="Link 2">
+                </a>
+            </div>
+        </div>      
+    </section>
+
+    <div class="navigation">
+        <button onclick="window.location.href='../';">Zurück zur Hauptseite</button>
+    </div>
+
+    <script>
+        const username = "57007c50-a899-42a8-a707-c03718bdbf38";
+
+        const favicon = document.getElementById('favicon');
+        favicon.href = `https://crafatar.com/avatars/${username}?size=64&overlay`;
+
+        const playerSkin = document.getElementById('playerSkin');
+        playerSkin.src = `https://crafatar.com/renders/body/${username}?size=256&overlay`;
+    </script>
+</body>
+</html>

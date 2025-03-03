@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empfi | Startseite</title>
+    <link id="favicon" rel="icon" type="image/png" href="">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: url('banner-image.png') no-repeat center center/cover;
+            border-radius: 0 0 3rem 3rem;
+            color: #3b3b3b;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #0077ff;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .hero img {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 200px;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .section {
+            padding: 3rem 2rem;
+            margin: 2rem auto;
+            background-color: #161b22;
+            border-radius: 1rem;
+            max-width: 800px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            color: #58a6ff;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section ul li {
+            background-color: #0d1117;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #161b22;
+            border-radius: 1rem 1rem 0 0;
+            margin-top: 2rem;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .navigation button {
+            background-color: #58a6ff;
+            color: #0d1117;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            animation: fadeIn 1.2s ease-in-out forwards;
+        }
+
+        .navigation button:hover {
+            background-color: #0077ff;
+        }
+
+        footer p {
+            margin: 0;
+            color: #8b949e;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section, .hero, footer {
+            animation: fadeIn 1.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>Willkommen in meinem Portfolio</h1>
+        <p>Entdecke meine Erfahrungen und Projekte in der Minecraft-Welt und darüber hinaus!</p>
+        <img id="playerSkin" alt="Minecraft Spieler Skin">
+    </header>
+
+    <section id="ueber-mich" class="section">
+        <h2>Über mich</h2>
+        <p>Ich bin ein begeisterter Minecraft-Spieler und Entwickler. Mit einer Leidenschaft für Design und Kreativität bringe ich beeindruckende Projekte zum Leben.</p>
+    </section>
+
+    <section id="leistungen" class="section">
+        <h2>Leistungen</h2>
+        <ul>
+            <li>Server-Setup und Optimierung</li>
+            <li>Erstellung von Discord Bots</li>
+            <li>Community-Management und Event-Planung</li>
+        </ul>
+    </section>
+
+    <section id="erfahrungen" class="section">
+        <h2>Erfahrungen</h2>
+        <ul>
+            <li>Entwicklung von Minecraft-Plugins in Java</li>
+            <li>Erfolgreiche Verwaltung eines Servers mit über 500 aktiven Spielern</li>
+            <li>Design und Umsetzung von maßgeschneiderten Spielmodi</li>
+            <li>Schulung und Leitung eines Teams von Moderatoren</li>
+        </ul>
+    </section>
+
+    <div class="navigation">
+        <button onclick="window.location.href='./projekte';">Projekte</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 empfi Portfolio. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        const username = "57007c50-a899-42a8-a707-c03718bdbf38"; 
+
+        const favicon = document.getElementById('favicon');
+        favicon.href = `https://crafatar.com/avatars/${username}?size=64&overlay`;
+
+        const playerSkin = document.getElementById('playerSkin');
+        playerSkin.src = `https://crafatar.com/renders/body/${username}?size=256&overlay`;
+    </script>
+</body>
+</html>
