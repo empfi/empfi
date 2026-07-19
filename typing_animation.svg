@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 60" width="100%" height="60" fill="none">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&amp;display=swap');
+    .txt {
+      font-family: 'Fira Code', monospace;
+      font-size: 20px;
+      fill: #00f2fe;
+      font-weight: 500;
+      opacity: 0;
+      animation: rotateText 12s infinite;
+    }
+    .txt-1 { animation-delay: 0s; fill: #00f2fe; }
+    .txt-2 { animation-delay: 4s; fill: #4facfe; }
+    .txt-3 { animation-delay: 8s; fill: #a18cd1; }
+    
+    @keyframes rotateText {
+      0% { opacity: 0; transform: translateY(15px); }
+      5% { opacity: 1; transform: translateY(0px); }
+      30% { opacity: 1; transform: translateY(0px); }
+      35% { opacity: 0; transform: translateY(-15px); }
+      100% { opacity: 0; }
+    }
+    
+    .label {
+      font-family: 'Fira Code', monospace;
+      font-size: 20px;
+      fill: #ffffff;
+      font-weight: 600;
+    }
+    .prompt {
+      fill: #6f42c1;
+      font-weight: bold;
+    }
+  </style>
+  <text x="10" y="38" class="label"><tspan class="prompt">guest@github:~$</tspan> echo </text>
+  <g transform="translate(195, 0)">
+    <text x="0" y="38" class="txt txt-1">"building modern web apps..." 🚀</text>
+    <text x="0" y="38" class="txt txt-2">"architecting robust backends..." ⚙️</text>
+    <text x="0" y="38" class="txt txt-3">"automating deployment pipelines..." 🐳</text>
+  </g>
+</svg>
