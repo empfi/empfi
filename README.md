@@ -1,9 +1,5 @@
 # Hi, I'm empfi 👋
 
-<p align="center">
-  <img src="typing_animation.svg" alt="Typing Animation" width="100%" />
-</p>
-
 I'm a full-stack developer who enjoys building clean, user-friendly web applications and database architectures.
 
 ---
