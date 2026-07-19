@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 130" width="100%" height="130" fill="none">
+  <style>
+    <![CDATA[
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
+    
+    .badge {
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      fill: #ffffff;
+      animation: float 4s ease-in-out infinite;
+    }
+    
+    .bg {
+      fill: #161b22;
+      stroke: #30363d;
+      stroke-width: 1;
+      rx: 6px;
+      transition: stroke 0.3s;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    
+    /* Staggered animation delays for the floating effect */
+    .b-1 { animation-delay: 0.0s; }
+    .b-2 { animation-delay: 0.2s; }
+    .b-3 { animation-delay: 0.4s; }
+    .b-4 { animation-delay: 0.6s; }
+    .b-5 { animation-delay: 0.8s; }
+    .b-6 { animation-delay: 1.0s; }
+    .b-7 { animation-delay: 1.2s; }
+    .b-8 { animation-delay: 1.4s; }
+    .b-9 { animation-delay: 1.6s; }
+    .b-10 { animation-delay: 1.8s; }
+
+    /* Dot indicators/accent colors */
+    .dot { r: 4px; }
+    .dot-react { fill: #61dafb; }
+    .dot-ts { fill: #3178c6; }
+    .dot-tw { fill: #38b2ac; }
+    .dot-java { fill: #f89820; }
+    .dot-py { fill: #3776ab; }
+    .dot-node { fill: #339933; }
+    .dot-express { fill: #ffffff; }
+    .dot-mysql { fill: #00758f; }
+    .dot-aws { fill: #ff9900; }
+    .dot-git { fill: #f05032; }
+    ]]>
+  </style>
+
+  <!-- Row 1: Frontend & Languages -->
+  <g transform="translate(10, 15)">
+    <!-- React -->
+    <g class="badge b-1" transform="translate(0, 0)">
+      <rect class="bg" width="100" height="34" />
+      <circle class="dot dot-react" cx="20" cy="17" />
+      <text x="35" y="21">React</text>
+    </g>
+
+    <!-- TypeScript -->
+    <g class="badge b-2" transform="translate(115, 0)">
+      <rect class="bg" width="130" height="34" />
+      <circle class="dot dot-ts" cx="20" cy="17" />
+      <text x="35" y="21">TypeScript</text>
+    </g>
+
+    <!-- Tailwind -->
+    <g class="badge b-3" transform="translate(260, 0)">
+      <rect class="bg" width="130" height="34" />
+      <circle class="dot dot-tw" cx="20" cy="17" />
+      <text x="35" y="21">Tailwind CSS</text>
+    </g>
+
+    <!-- Java -->
+    <g class="badge b-4" transform="translate(405, 0)">
+      <rect class="bg" width="95" height="34" />
+      <circle class="dot dot-java" cx="20" cy="17" />
+      <text x="35" y="21">Java</text>
+    </g>
+
+    <!-- Python -->
+    <g class="badge b-5" transform="translate(515, 0)">
+      <rect class="bg" width="105" height="34" />
+      <circle class="dot dot-py" cx="20" cy="17" />
+      <text x="35" y="21">Python</text>
+    </g>
+  </g>
+
+  <!-- Row 2: Backend & Tools -->
+  <g transform="translate(10, 65)">
+    <!-- Node.js -->
+    <g class="badge b-6" transform="translate(0, 0)">
+      <rect class="bg" width="110" height="34" />
+      <circle class="dot dot-node" cx="20" cy="17" />
+      <text x="35" y="21">Node.js</text>
+    </g>
+
+    <!-- Express -->
+    <g class="badge b-7" transform="translate(125, 0)">
+      <rect class="bg" width="115" height="34" />
+      <circle class="dot dot-express" cx="20" cy="17" />
+      <text x="35" y="21">Express.js</text>
+    </g>
+
+    <!-- MySQL -->
+    <g class="badge b-8" transform="translate(255, 0)">
+      <rect class="bg" width="105" height="34" />
+      <circle class="dot dot-mysql" cx="20" cy="17" />
+      <text x="35" y="21">MySQL</text>
+    </g>
+
+    <!-- AWS -->
+    <g class="badge b-9" transform="translate(375, 0)">
+      <rect class="bg" width="95" height="34" />
+      <circle class="dot dot-aws" cx="20" cy="17" />
+      <text x="35" y="21">AWS</text>
+    </g>
+
+    <!-- Git -->
+    <g class="badge b-10" transform="translate(485, 0)">
+      <rect class="bg" width="90" height="34" />
+      <circle class="dot dot-git" cx="20" cy="17" />
+      <text x="35" y="21">Git</text>
+    </g>
+  </g>
+</svg>
