@@ -1,6 +1,6 @@
 # Hi, I'm empfi 👋
 
-I'm a full-stack developer who enjoys building clean, user-friendly web applications and database architectures.
+I'm a full-stack developer who enjoys building clean, user-friendly web applications, Minecraft Plugins and much more!
 
 ---
 
