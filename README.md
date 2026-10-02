@@ -5,9 +5,8 @@ I'm a full-stack developer who enjoys building clean, user-friendly web applicat
 ---
 
 ### Hobbies
-🍳 **Cooking** — Baking fresh bread and trying out new recipes.  
-🚲 **Biking** — Exploring outdoor trails and staying active.  
-💻 **Coding** — Building automation scripts and working on side projects.  
+🍳 **Cooking** - Cooking and trying out new recipes.  
+🚲 **Biking** - Exploring outdoor trails and staying active.  
 
 ---
 
